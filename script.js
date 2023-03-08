@@ -4,9 +4,15 @@ let arr = [];
 
 // function load(){
 //     if(localStorage.getItem('task')){
-//         arr = JSON.parse(localStorage.getItem('task'));
-//         for(i=0; i < arr.length; i++){
-//             items.innerHTML += `<div><p>${arr[i]}</p><ion-icon name="checkmark-circle-outline"></ion-icon></div>`
+//          arr = JSON.parse(localStorage.getItem('task'));
+            // let div = document.createElement('div')
+            // div.setAttribute('class', 'card');
+//         
+            // for(i=0; i < arr.length; i++){
+                // div.innerHTML = `${arr[i]}<ion-icon name="checkmark-circle-outline"></ion-icon>`
+                // items.appendChild(div);
+
+
 //         }
 //     }
 
@@ -32,9 +38,10 @@ add.addEventListener('click', function () {
 
     card.forEach(function(c, i){
         ion[i].addEventListener('click', function(){
-            c.innerHTML = ''
-        }
-    )});
+            c.style = 'display:none';
+            
+        })
+    });
 
 
 
