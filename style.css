@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-.container .items .card {
+.container .items div {
   display: flex;
   align-items: center;
   justify-content: space-between;
