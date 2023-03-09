@@ -10,6 +10,8 @@
 
 body {
   display: flex;
+  /* flex-direction: column; */
+
   justify-content: center;
 }
 
@@ -56,4 +58,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+
+img{
+  cursor: pointer;
+}
+
+
+.name{
+  display: none;
 }
