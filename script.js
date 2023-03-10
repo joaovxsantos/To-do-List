@@ -4,8 +4,6 @@ let arr = [];
 
 
 
-
-
 function load() {
 
     if (localStorage.task) {
@@ -19,7 +17,7 @@ function load() {
             items.appendChild(div);
 
             if (arr[i].length == 0) {
-                items.removeChild(div);
+                div.style = 'display:none';
             }
         }
 
@@ -32,9 +30,7 @@ function load() {
 
 
 
-                // localStorage.task = JSON.stringify(arr[i])
                 localStorage.task = JSON.stringify(arr);
-                // console.log(arr)
 
 
             })
@@ -59,7 +55,6 @@ add.addEventListener('click', function () {
             c.style = 'display:none';
             arr[i] = [];
             localStorage.task = JSON.stringify(arr);
-            // console.log(arr)
 
         })
     });
