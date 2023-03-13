@@ -27,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  padding: 5px 10px;
 }
 
 .container ion-icon {
@@ -57,4 +58,28 @@ body {
 
 img {
   cursor: pointer;
+}
+
+.items .card {
+  transition: all 1s linear;
+  padding: 5px 20px;
+}
+
+.items .card p {
+  transition: all 100ms linear;
+}
+
+.items .card:hover {
+  background: rgba(150, 141, 141, 0.2);
+}
+
+.card:hover p {
+  transform: scale(110%, 110%);
+  animation: desloc 500ms linear both;
+}
+
+@keyframes desloc {
+  100% {
+    margin-left: 15px;
+  }
 }
