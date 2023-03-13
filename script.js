@@ -74,7 +74,8 @@ add.addEventListener('click', function () {
     if (num < 1) {
         //Setando atributo class com o valor card para a div, passando seu inner e após isso adicionando como filho de items.
         div.setAttribute('class', 'card');
-        div.innerHTML = `<p>${input}</p><ion-icon name="checkmark-circle-outline"></ion-icon>`
+
+        div.innerHTML = `<p>${input}</p><ion-icon name="checkmark-circle-outline"></ion-icon>`;
         items.appendChild(div);
 
         //Passando a tarefa para a ultima posição do array.
