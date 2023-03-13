@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 5px 10px;
+  padding: 5px 20px;
 }
 
 .container ion-icon {

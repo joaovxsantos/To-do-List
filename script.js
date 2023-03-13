@@ -63,11 +63,14 @@ add.addEventListener('click', function () {
         if (arr[i] == input && input.length >= 1) {
             alert('A tarefa já se encontra na lista.');
             div.style = 'display:none';
+            //Passei a variável num pra receber '1' se tiver o valor igual
             num += 1;
-            console.log(num)
+
         }
     })
 
+    //Aq crio uma condição que só se num for menor que 1, ou seja, 0, que o valor de input
+    //será adicionado no array de tarefas.
     if (num < 1) {
         //Setando atributo class com o valor card para a div, passando seu inner e após isso adicionando como filho de items.
         div.setAttribute('class', 'card');
